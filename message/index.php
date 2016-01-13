@@ -1,18 +1,22 @@
 <?php
-session_start();
-    if ( empty($_SESSION))
-        {
-            echo "The array is currently empty.";
-        }
-    
-    else
-        {
-           foreach ($_SESSION['messages']  as $key => $message) 
-            {
-                echo "<h1>" . $message['title'] . "</h1>";
-                echo "<h2>" . $message['content'] . "</h2>";
-            }
-        
-        }
-        
+
+
+/**
+ * This will show all the messages.
+ */
+include_once'../includes/functions.php';
+include_once'../includes/header.php';
+include_once'../includes/navbarMessages.php';
 ?>
+
+            <div id="container" class="container">    
+                <div class="col-md-8 col-md-offset-2">   
+                    <?php 
+                
+                        showAll();
+            
+                    ?>
+                </div>
+            </div>
+
+<?php include_once'../includes/footer.php'; ?>
