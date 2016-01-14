@@ -26,26 +26,26 @@ function character_limit($x, $length)
  * Shows all created messages in one list.
  * 
  */
-function showAll(){
-    
+function showAll()
+{ 
      if ( empty($_SESSION))
-                    {
-                        echo "There are no messages found!";
-                    }
+        {
+            echo "There are no messages found!";
+        }
     
-                    else
-                    {   
-                        foreach ($_SESSION['messages']  as $key => $message) 
-                        {
-                            echo "<h1>" . $message['title'] . "</h1>";
-                            character_limit($message['content'], 100);
-                            echo "<br>";
-                                
-                            echo "<a id='infoButton' class='btn btn-primary pull-right' href='show.php?id=$key'>Hele bericht</a>";
-                            echo "<hr>";
-                        }
-        
-                    }
+        else
+        {   
+            foreach ($_SESSION['messages']  as $key => $message) 
+            {
+                echo "<h1>" . $message['title'] . "</h1>";
+                character_limit($message['content'], 100);
+                echo "<br>";
+
+                echo "<a id='infoButton' class='btn btn-primary pull-right' href='show.php?id=$key'>Hele bericht</a>";
+                echo "<hr>";
+            }
+
+        }
 }
 
 

@@ -8,7 +8,7 @@
 ?>
 
         <div id="container" class="container">  
-            <div class="col-md-6 col-md-offset-3"
+            <div class="col-md-6 col-md-offset-3">
                 <form method="post" action="insert.php">
                     <div class="form-group">
                       <label for="title">Title</label>
