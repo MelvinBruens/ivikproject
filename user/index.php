@@ -4,9 +4,9 @@
 /**
  * This will show all the messages.
  */
-include_once'../includes/message.functions.php';
+include_once'../includes/user.functions.php';
 include_once'../templates/header.php';
-include_once'../templates/navbarMessages.php';
+include_once'../templates/navbarUser.php';
 ?>
 
             <div id="container" class="container">    
